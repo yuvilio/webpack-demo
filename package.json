@@ -1,0 +1,21 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "developch0201": "webpack --config ./config/ch02/webpack.config.01.js --mode development --watch",
+    "buildch0201": "webpack --config ./config/ch02/webpack.config.01.js  --mode production",
+    "developch0202": "webpack --config ./config/ch02/webpack.config.02.js --mode development --watch",
+    "buildch0202": "webpack --config ./config/ch02/webpack.config.02.js  --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lodash-es": "^4.17.10",
+    "tachyons": "^4.11.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
