@@ -1,0 +1,7 @@
+/* run example:
+$ ./node_modules/postcss-cli/bin/postcss postcss ./src/css/default/main.css -o ./dist/css/default/main.css -c postcss.config.js
+$
+ */
+@charset 'UTF-8';
+@import './_tachyons'; /* a-la-carte */
+@import 'misc/_type';
