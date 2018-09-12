@@ -1,17 +1,20 @@
-// webpack.config.03.js
+// webpack.config.04.js
 const path = require('path')
 
 module.exports = {
-  entry: './src/ch0203/index.js',
-
-  // resulting buntdle: ./dist/js/ch0202/bundle.js
+    // code splitting example .
+  entry: {
+    app: './src/ch0204/index.js'
+  },
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, '../../dist/js/ch0203')
+    // we'll output
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, '../../dist/js/ch0204'),
+
   },
 
-  // new section. let's add a loader, babel-loader, so we can run our js through it
-  // see .babelrc in this folder for additional configuration
+
+  // run some js through babel
   module: {
     rules: [
       {
