@@ -8,5 +8,14 @@ module.exports = {
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, '../../dist/js/ch0202')
+	},
+
+	// webpack-dev-server configuration
+	devServer: {
+		contentBase: path.join(__dirname, '../../'), 
+		watchContentBase: true,
+		publicPath: '/dist/js/ch0202',
+		compress: false,
+		port: 9000
 	}
 }

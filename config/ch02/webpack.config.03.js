@@ -25,5 +25,15 @@ module.exports = {
         }
       }
     ]
+  },
+
+
+  // webpack-dev-server configuration
+  devServer: {
+    contentBase: path.join(__dirname, '../../'), // which filesystem directory is considered web root /
+    watchContentBase: true,
+    publicPath: '/dist/js/ch0203', // webpack-dev-server doesn't write to disk. what's what webpack does.  It serves the result from memory . so indicate in what server path you want it to be found
+    compress: false,
+    port: 9000
   }
 }

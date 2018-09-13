@@ -6,9 +6,11 @@
   "scripts": {
     "developch0201": "webpack --config ./config/ch02/webpack.config.01.js --mode development --watch",
     "buildch0201": "webpack --config ./config/ch02/webpack.config.01.js  --mode production",
-    "developch0202": "webpack --config ./config/ch02/webpack.config.02.js --mode development --watch",
-    "developch0203": "webpack --config ./config/ch02/webpack.config.03.js --mode development --watch",
-    "developch0204": "webpack --config ./config/ch02/webpack.config.04.js --mode development --watch"
+    "developch0202": "webpack-dev-server --config ./config/ch02/webpack.config.02.js --mode development #webpack-dev-server is like the webpack cli but with a simple webserver for live reloading ",
+    "developch0203": "webpack-dev-server --config ./config/ch02/webpack.config.03.js --mode development",
+    "developch0204": "webpack-dev-server --config ./config/ch02/webpack.config.04.js --mode development",
+    "devech0204": "webpack --config ./config/ch02/webpack.config.04.js --mode development --watch"
+
   },
   "keywords": [],
   "author": "",
@@ -21,7 +23,8 @@
     "lodash-es": "^4.17.10",
     "tachyons": "^4.11.1",
     "webpack": "^4.17.2",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {}
 }

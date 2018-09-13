@@ -28,5 +28,14 @@ module.exports = {
         }
       }
     ]
+  },
+
+  // webpack-dev-server configuration
+  devServer: {
+    contentBase: path.join(__dirname, '../../'),
+    watchContentBase: true,
+    publicPath: '/dist/js/ch0204',
+    compress: false,
+    port: 9000
   }
 }
